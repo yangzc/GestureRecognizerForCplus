@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA1ACA0E20C55714004BF21E /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1ACA0C20C55714004BF21E /* ncnn.framework */; };
+		BA1ACA0F20C55714004BF21E /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1ACA0D20C55714004BF21E /* openmp.framework */; };
+		BA1ACA1920C55ABB004BF21E /* ncnn_recognizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA1ACA1620C55ABB004BF21E /* ncnn_recognizer.h */; };
+		BA1ACA6220C55B1D004BF21E /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644ED20C54A7F0030AAB5 /* json_reader.cpp */; };
+		BA1ACA6320C55B1D004BF21E /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644EE20C54A7F0030AAB5 /* json_value.cpp */; };
+		BA1ACA6420C55B1D004BF21E /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F020C54A7F0030AAB5 /* json_writer.cpp */; };
+		BA1ACA6520C55B1D004BF21E /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F720C54A7F0030AAB5 /* classification.cpp */; };
+		BA1ACA6620C55B1D004BF21E /* gesture_classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F920C54A7F0030AAB5 /* gesture_classification.cpp */; };
+		BA1ACA6720C55B1D004BF21E /* ncnn_classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FB20C54A7F0030AAB5 /* ncnn_classification.cpp */; };
+		BA1ACA6820C55B1D004BF21E /* common_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FD20C54A7F0030AAB5 /* common_type.cpp */; };
+		BA1ACA6920C55B1D004BF21E /* gesture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FF20C54A7F0030AAB5 /* gesture.cpp */; };
+		BA1ACA6A20C55B1D004BF21E /* gesture_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450120C54A7F0030AAB5 /* gesture_utils.cpp */; };
+		BA1ACA6B20C55B1D004BF21E /* distance_matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450520C54A7F0030AAB5 /* distance_matcher.cpp */; };
+		BA1ACA6C20C55B1D004BF21E /* matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450720C54A7F0030AAB5 /* matcher.cpp */; };
+		BA1ACA6D20C55B1D004BF21E /* vector_matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450920C54A7F0030AAB5 /* vector_matcher.cpp */; };
+		BA1ACA6E20C55B1D004BF21E /* polyline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450B20C54A7F0030AAB5 /* polyline.cpp */; };
+		BA1ACA6F20C55B1D004BF21E /* recognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450D20C54A7F0030AAB5 /* recognizer.cpp */; };
+		BA1ACA7020C55B1D004BF21E /* distance_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451020C54A7F0030AAB5 /* distance_reducer.cpp */; };
+		BA1ACA7120C55B1D004BF21E /* douglaspeukcer_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451220C54A7F0030AAB5 /* douglaspeukcer_reducer.cpp */; };
+		BA1ACA7220C55B1D004BF21E /* reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451420C54A7F0030AAB5 /* reducer.cpp */; };
+		BA1ACA7320C55B1D004BF21E /* vector_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451620C54A7F0030AAB5 /* vector_reducer.cpp */; };
+		BA1ACA7420C55B1D004BF21E /* gesture_pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451920C54A7F0030AAB5 /* gesture_pair_rule.cpp */; };
+		BA1ACA7520C55B1D004BF21E /* ncnn_pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451B20C54A7F0030AAB5 /* ncnn_pair_rule.cpp */; };
+		BA1ACA7620C55B1D004BF21E /* pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451D20C54A7F0030AAB5 /* pair_rule.cpp */; };
+		BA1ACA7720C55B1D004BF21E /* template_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452120C54A7F0030AAB5 /* template_parser.cpp */; };
+		BA1ACA7820C55B1D004BF21E /* template_parser_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452320C54A7F0030AAB5 /* template_parser_json.cpp */; };
+		BA1ACA7920C55B1D004BF21E /* template_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452520C54A7F0030AAB5 /* template_manager.cpp */; };
+		BA1ACA7A20C55B1D004BF21E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452720C54A7F0030AAB5 /* utils.cpp */; };
+		BA1ACA7D20C55B35004BF21E /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1ACA0C20C55714004BF21E /* ncnn.framework */; };
+		BA1ACA7E20C55B35004BF21E /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1ACA0D20C55714004BF21E /* openmp.framework */; };
+		BA1ACA8020C55C32004BF21E /* bitmap_image.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BAB6452A20C54A7F0030AAB5 /* bitmap_image.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8120C55C32004BF21E /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644E520C54A7F0030AAB5 /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8220C55C32004BF21E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644E620C54A7F0030AAB5 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8320C55C32004BF21E /* features.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644E720C54A7F0030AAB5 /* features.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8420C55C32004BF21E /* forwards.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644E820C54A7F0030AAB5 /* forwards.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8520C55C32004BF21E /* json.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644E920C54A7F0030AAB5 /* json.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8620C55C32004BF21E /* json_batchallocator.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644EA20C54A7F0030AAB5 /* json_batchallocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8720C55C32004BF21E /* reader.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644F120C54A7F0030AAB5 /* reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8820C55C32004BF21E /* value.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644F320C54A7F0030AAB5 /* value.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8920C55C32004BF21E /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644F420C54A7F0030AAB5 /* writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8A20C55C32004BF21E /* lenet.mem.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6454420C54F710030AAB5 /* lenet.mem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8B20C55C32004BF21E /* classification.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644F820C54A7F0030AAB5 /* classification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8C20C55C32004BF21E /* gesture_classification.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644FA20C54A7F0030AAB5 /* gesture_classification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8D20C55C32004BF21E /* ncnn_classification.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644FC20C54A7F0030AAB5 /* ncnn_classification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8E20C55C32004BF21E /* common_type.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB644FE20C54A7F0030AAB5 /* common_type.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA8F20C55C32004BF21E /* gesture.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450020C54A7F0030AAB5 /* gesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9020C55C32004BF21E /* gesture_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450220C54A7F0030AAB5 /* gesture_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9120C55C32004BF21E /* lenet.id.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450320C54A7F0030AAB5 /* lenet.id.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9220C55C32004BF21E /* distance_matcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450620C54A7F0030AAB5 /* distance_matcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9320C55C32004BF21E /* matcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450820C54A7F0030AAB5 /* matcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9420C55C32004BF21E /* vector_matcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450A20C54A7F0030AAB5 /* vector_matcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9520C55C32004BF21E /* polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450C20C54A7F0030AAB5 /* polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9620C55C32004BF21E /* recognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6450E20C54A7F0030AAB5 /* recognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9720C55C32004BF21E /* distance_reducer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451120C54A7F0030AAB5 /* distance_reducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9820C55C32004BF21E /* douglaspeukcer_reducer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451320C54A7F0030AAB5 /* douglaspeukcer_reducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9920C55C32004BF21E /* reducer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451520C54A7F0030AAB5 /* reducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9A20C55C32004BF21E /* vector_reducer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451720C54A7F0030AAB5 /* vector_reducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9B20C55C32004BF21E /* gesture_pair_rule.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451A20C54A7F0030AAB5 /* gesture_pair_rule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9C20C55C32004BF21E /* ncnn_pair_rule.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451C20C54A7F0030AAB5 /* ncnn_pair_rule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9D20C55C32004BF21E /* pair_rule.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6451E20C54A7F0030AAB5 /* pair_rule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9E20C55C32004BF21E /* template_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6452220C54A7F0030AAB5 /* template_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACA9F20C55C32004BF21E /* template_parser_json.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6452420C54A7F0030AAB5 /* template_parser_json.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACAA020C55C32004BF21E /* template_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6452620C54A7F0030AAB5 /* template_manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACAA120C55C32004BF21E /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6452820C54A7F0030AAB5 /* utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1ACAA220C55C32004BF21E /* ncnn_recognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1ACA1620C55ABB004BF21E /* ncnn_recognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB644D920C54A0C0030AAB5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644D820C54A0C0030AAB5 /* main.cpp */; };
+		BAB6452B20C54A800030AAB5 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644ED20C54A7F0030AAB5 /* json_reader.cpp */; };
+		BAB6452C20C54A800030AAB5 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644EE20C54A7F0030AAB5 /* json_value.cpp */; };
+		BAB6452D20C54A800030AAB5 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F020C54A7F0030AAB5 /* json_writer.cpp */; };
+		BAB6452E20C54A800030AAB5 /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F720C54A7F0030AAB5 /* classification.cpp */; };
+		BAB6452F20C54A800030AAB5 /* gesture_classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644F920C54A7F0030AAB5 /* gesture_classification.cpp */; };
+		BAB6453020C54A800030AAB5 /* ncnn_classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FB20C54A7F0030AAB5 /* ncnn_classification.cpp */; };
+		BAB6453120C54A800030AAB5 /* common_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FD20C54A7F0030AAB5 /* common_type.cpp */; };
+		BAB6453220C54A800030AAB5 /* gesture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB644FF20C54A7F0030AAB5 /* gesture.cpp */; };
+		BAB6453320C54A800030AAB5 /* gesture_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450120C54A7F0030AAB5 /* gesture_utils.cpp */; };
+		BAB6453420C54A800030AAB5 /* distance_matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450520C54A7F0030AAB5 /* distance_matcher.cpp */; };
+		BAB6453520C54A800030AAB5 /* matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450720C54A7F0030AAB5 /* matcher.cpp */; };
+		BAB6453620C54A800030AAB5 /* vector_matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450920C54A7F0030AAB5 /* vector_matcher.cpp */; };
+		BAB6453720C54A800030AAB5 /* polyline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450B20C54A7F0030AAB5 /* polyline.cpp */; };
+		BAB6453820C54A800030AAB5 /* recognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6450D20C54A7F0030AAB5 /* recognizer.cpp */; };
+		BAB6453920C54A800030AAB5 /* distance_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451020C54A7F0030AAB5 /* distance_reducer.cpp */; };
+		BAB6453A20C54A800030AAB5 /* douglaspeukcer_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451220C54A7F0030AAB5 /* douglaspeukcer_reducer.cpp */; };
+		BAB6453B20C54A800030AAB5 /* reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451420C54A7F0030AAB5 /* reducer.cpp */; };
+		BAB6453C20C54A800030AAB5 /* vector_reducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451620C54A7F0030AAB5 /* vector_reducer.cpp */; };
+		BAB6453D20C54A800030AAB5 /* gesture_pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451920C54A7F0030AAB5 /* gesture_pair_rule.cpp */; };
+		BAB6453E20C54A800030AAB5 /* ncnn_pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451B20C54A7F0030AAB5 /* ncnn_pair_rule.cpp */; };
+		BAB6453F20C54A800030AAB5 /* pair_rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6451D20C54A7F0030AAB5 /* pair_rule.cpp */; };
+		BAB6454020C54A800030AAB5 /* template_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452120C54A7F0030AAB5 /* template_parser.cpp */; };
+		BAB6454120C54A800030AAB5 /* template_parser_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452320C54A7F0030AAB5 /* template_parser_json.cpp */; };
+		BAB6454220C54A800030AAB5 /* template_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452520C54A7F0030AAB5 /* template_manager.cpp */; };
+		BAB6454320C54A800030AAB5 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB6452720C54A7F0030AAB5 /* utils.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA1ACA1220C55ABB004BF21E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BA1ACA1920C55ABB004BF21E /* ncnn_recognizer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB644D320C54A0C0030AAB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA1ACA0C20C55714004BF21E /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
+		BA1ACA0D20C55714004BF21E /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
+		BA1ACA1420C55ABB004BF21E /* libncnn-recognizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libncnn-recognizer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1ACA1620C55ABB004BF21E /* ncnn_recognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ncnn_recognizer.h; sourceTree = "<group>"; };
+		BA1ACA1720C55ABB004BF21E /* ncnn_recognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ncnn_recognizer.m; sourceTree = "<group>"; };
+		BAB644D520C54A0C0030AAB5 /* GestureRecognizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GestureRecognizer; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB644D820C54A0C0030AAB5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAB644E520C54A7F0030AAB5 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		BAB644E620C54A7F0030AAB5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		BAB644E720C54A7F0030AAB5 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		BAB644E820C54A7F0030AAB5 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		BAB644E920C54A7F0030AAB5 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		BAB644EA20C54A7F0030AAB5 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		BAB644EB20C54A7F0030AAB5 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		BAB644EC20C54A7F0030AAB5 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		BAB644ED20C54A7F0030AAB5 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		BAB644EE20C54A7F0030AAB5 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		BAB644EF20C54A7F0030AAB5 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		BAB644F020C54A7F0030AAB5 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		BAB644F120C54A7F0030AAB5 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		BAB644F220C54A7F0030AAB5 /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
+		BAB644F320C54A7F0030AAB5 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		BAB644F420C54A7F0030AAB5 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		BAB644F720C54A7F0030AAB5 /* classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classification.cpp; sourceTree = "<group>"; };
+		BAB644F820C54A7F0030AAB5 /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classification.h; sourceTree = "<group>"; };
+		BAB644F920C54A7F0030AAB5 /* gesture_classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gesture_classification.cpp; sourceTree = "<group>"; };
+		BAB644FA20C54A7F0030AAB5 /* gesture_classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesture_classification.h; sourceTree = "<group>"; };
+		BAB644FB20C54A7F0030AAB5 /* ncnn_classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ncnn_classification.cpp; sourceTree = "<group>"; };
+		BAB644FC20C54A7F0030AAB5 /* ncnn_classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ncnn_classification.h; sourceTree = "<group>"; };
+		BAB644FD20C54A7F0030AAB5 /* common_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common_type.cpp; sourceTree = "<group>"; };
+		BAB644FE20C54A7F0030AAB5 /* common_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_type.h; sourceTree = "<group>"; };
+		BAB644FF20C54A7F0030AAB5 /* gesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gesture.cpp; sourceTree = "<group>"; };
+		BAB6450020C54A7F0030AAB5 /* gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesture.h; sourceTree = "<group>"; };
+		BAB6450120C54A7F0030AAB5 /* gesture_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gesture_utils.cpp; sourceTree = "<group>"; };
+		BAB6450220C54A7F0030AAB5 /* gesture_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesture_utils.h; sourceTree = "<group>"; };
+		BAB6450320C54A7F0030AAB5 /* lenet.id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lenet.id.h; sourceTree = "<group>"; };
+		BAB6450520C54A7F0030AAB5 /* distance_matcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distance_matcher.cpp; sourceTree = "<group>"; };
+		BAB6450620C54A7F0030AAB5 /* distance_matcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distance_matcher.h; sourceTree = "<group>"; };
+		BAB6450720C54A7F0030AAB5 /* matcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matcher.cpp; sourceTree = "<group>"; };
+		BAB6450820C54A7F0030AAB5 /* matcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matcher.h; sourceTree = "<group>"; };
+		BAB6450920C54A7F0030AAB5 /* vector_matcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector_matcher.cpp; sourceTree = "<group>"; };
+		BAB6450A20C54A7F0030AAB5 /* vector_matcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector_matcher.h; sourceTree = "<group>"; };
+		BAB6450B20C54A7F0030AAB5 /* polyline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyline.cpp; sourceTree = "<group>"; };
+		BAB6450C20C54A7F0030AAB5 /* polyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polyline.h; sourceTree = "<group>"; };
+		BAB6450D20C54A7F0030AAB5 /* recognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recognizer.cpp; sourceTree = "<group>"; };
+		BAB6450E20C54A7F0030AAB5 /* recognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recognizer.h; sourceTree = "<group>"; };
+		BAB6451020C54A7F0030AAB5 /* distance_reducer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distance_reducer.cpp; sourceTree = "<group>"; };
+		BAB6451120C54A7F0030AAB5 /* distance_reducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distance_reducer.h; sourceTree = "<group>"; };
+		BAB6451220C54A7F0030AAB5 /* douglaspeukcer_reducer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = douglaspeukcer_reducer.cpp; sourceTree = "<group>"; };
+		BAB6451320C54A7F0030AAB5 /* douglaspeukcer_reducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = douglaspeukcer_reducer.h; sourceTree = "<group>"; };
+		BAB6451420C54A7F0030AAB5 /* reducer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reducer.cpp; sourceTree = "<group>"; };
+		BAB6451520C54A7F0030AAB5 /* reducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reducer.h; sourceTree = "<group>"; };
+		BAB6451620C54A7F0030AAB5 /* vector_reducer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector_reducer.cpp; sourceTree = "<group>"; };
+		BAB6451720C54A7F0030AAB5 /* vector_reducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector_reducer.h; sourceTree = "<group>"; };
+		BAB6451920C54A7F0030AAB5 /* gesture_pair_rule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gesture_pair_rule.cpp; sourceTree = "<group>"; };
+		BAB6451A20C54A7F0030AAB5 /* gesture_pair_rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesture_pair_rule.h; sourceTree = "<group>"; };
+		BAB6451B20C54A7F0030AAB5 /* ncnn_pair_rule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ncnn_pair_rule.cpp; sourceTree = "<group>"; };
+		BAB6451C20C54A7F0030AAB5 /* ncnn_pair_rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ncnn_pair_rule.h; sourceTree = "<group>"; };
+		BAB6451D20C54A7F0030AAB5 /* pair_rule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pair_rule.cpp; sourceTree = "<group>"; };
+		BAB6451E20C54A7F0030AAB5 /* pair_rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pair_rule.h; sourceTree = "<group>"; };
+		BAB6452120C54A7F0030AAB5 /* template_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = template_parser.cpp; sourceTree = "<group>"; };
+		BAB6452220C54A7F0030AAB5 /* template_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_parser.h; sourceTree = "<group>"; };
+		BAB6452320C54A7F0030AAB5 /* template_parser_json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = template_parser_json.cpp; sourceTree = "<group>"; };
+		BAB6452420C54A7F0030AAB5 /* template_parser_json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_parser_json.h; sourceTree = "<group>"; };
+		BAB6452520C54A7F0030AAB5 /* template_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = template_manager.cpp; sourceTree = "<group>"; };
+		BAB6452620C54A7F0030AAB5 /* template_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_manager.h; sourceTree = "<group>"; };
+		BAB6452720C54A7F0030AAB5 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		BAB6452820C54A7F0030AAB5 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		BAB6452A20C54A7F0030AAB5 /* bitmap_image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bitmap_image.hpp; sourceTree = "<group>"; };
+		BAB6454420C54F710030AAB5 /* lenet.mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lenet.mem.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA1ACA1120C55ABB004BF21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1ACA7D20C55B35004BF21E /* ncnn.framework in Frameworks */,
+				BA1ACA7E20C55B35004BF21E /* openmp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB644D220C54A0C0030AAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1ACA0E20C55714004BF21E /* ncnn.framework in Frameworks */,
+				BA1ACA0F20C55714004BF21E /* openmp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA1ACA0B20C55714004BF21E /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ACA0C20C55714004BF21E /* ncnn.framework */,
+				BA1ACA0D20C55714004BF21E /* openmp.framework */,
+			);
+			name = frameworks;
+			path = GestureRecognizer/frameworks;
+			sourceTree = "<group>";
+		};
+		BA1ACA1520C55ABB004BF21E /* ncnn-recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ACA1620C55ABB004BF21E /* ncnn_recognizer.h */,
+				BA1ACA1720C55ABB004BF21E /* ncnn_recognizer.m */,
+			);
+			path = "ncnn-recognizer";
+			sourceTree = "<group>";
+		};
+		BA1ACA7C20C55B35004BF21E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAB644CC20C54A0C0030AAB5 = {
+			isa = PBXGroup;
+			children = (
+				BAB644D720C54A0C0030AAB5 /* GestureRecognizer */,
+				BA1ACA1520C55ABB004BF21E /* ncnn-recognizer */,
+				BAB644D620C54A0C0030AAB5 /* Products */,
+				BA1ACA0B20C55714004BF21E /* frameworks */,
+				BA1ACA7C20C55B35004BF21E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAB644D620C54A0C0030AAB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB644D520C54A0C0030AAB5 /* GestureRecognizer */,
+				BA1ACA1420C55ABB004BF21E /* libncnn-recognizer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB644D720C54A0C0030AAB5 /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6452920C54A7F0030AAB5 /* bitmap */,
+				BAB644E420C54A7F0030AAB5 /* json */,
+				BAB644F520C54A7F0030AAB5 /* recognizer */,
+				BAB644D820C54A0C0030AAB5 /* main.cpp */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		BAB644E420C54A7F0030AAB5 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				BAB644E520C54A7F0030AAB5 /* autolink.h */,
+				BAB644E620C54A7F0030AAB5 /* config.h */,
+				BAB644E720C54A7F0030AAB5 /* features.h */,
+				BAB644E820C54A7F0030AAB5 /* forwards.h */,
+				BAB644E920C54A7F0030AAB5 /* json.h */,
+				BAB644EA20C54A7F0030AAB5 /* json_batchallocator.h */,
+				BAB644EB20C54A7F0030AAB5 /* json_internalarray.inl */,
+				BAB644EC20C54A7F0030AAB5 /* json_internalmap.inl */,
+				BAB644ED20C54A7F0030AAB5 /* json_reader.cpp */,
+				BAB644EE20C54A7F0030AAB5 /* json_value.cpp */,
+				BAB644EF20C54A7F0030AAB5 /* json_valueiterator.inl */,
+				BAB644F020C54A7F0030AAB5 /* json_writer.cpp */,
+				BAB644F120C54A7F0030AAB5 /* reader.h */,
+				BAB644F220C54A7F0030AAB5 /* sconscript */,
+				BAB644F320C54A7F0030AAB5 /* value.h */,
+				BAB644F420C54A7F0030AAB5 /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		BAB644F520C54A7F0030AAB5 /* recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6454420C54F710030AAB5 /* lenet.mem.h */,
+				BAB644F620C54A7F0030AAB5 /* classification */,
+				BAB644FD20C54A7F0030AAB5 /* common_type.cpp */,
+				BAB644FE20C54A7F0030AAB5 /* common_type.h */,
+				BAB644FF20C54A7F0030AAB5 /* gesture.cpp */,
+				BAB6450020C54A7F0030AAB5 /* gesture.h */,
+				BAB6450120C54A7F0030AAB5 /* gesture_utils.cpp */,
+				BAB6450220C54A7F0030AAB5 /* gesture_utils.h */,
+				BAB6450320C54A7F0030AAB5 /* lenet.id.h */,
+				BAB6450420C54A7F0030AAB5 /* matcher */,
+				BAB6450B20C54A7F0030AAB5 /* polyline.cpp */,
+				BAB6450C20C54A7F0030AAB5 /* polyline.h */,
+				BAB6450D20C54A7F0030AAB5 /* recognizer.cpp */,
+				BAB6450E20C54A7F0030AAB5 /* recognizer.h */,
+				BAB6450F20C54A7F0030AAB5 /* reducer */,
+				BAB6451820C54A7F0030AAB5 /* rule */,
+				BAB6451F20C54A7F0030AAB5 /* template */,
+				BAB6452720C54A7F0030AAB5 /* utils.cpp */,
+				BAB6452820C54A7F0030AAB5 /* utils.h */,
+			);
+			path = recognizer;
+			sourceTree = "<group>";
+		};
+		BAB644F620C54A7F0030AAB5 /* classification */ = {
+			isa = PBXGroup;
+			children = (
+				BAB644F720C54A7F0030AAB5 /* classification.cpp */,
+				BAB644F820C54A7F0030AAB5 /* classification.h */,
+				BAB644F920C54A7F0030AAB5 /* gesture_classification.cpp */,
+				BAB644FA20C54A7F0030AAB5 /* gesture_classification.h */,
+				BAB644FB20C54A7F0030AAB5 /* ncnn_classification.cpp */,
+				BAB644FC20C54A7F0030AAB5 /* ncnn_classification.h */,
+			);
+			path = classification;
+			sourceTree = "<group>";
+		};
+		BAB6450420C54A7F0030AAB5 /* matcher */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6450520C54A7F0030AAB5 /* distance_matcher.cpp */,
+				BAB6450620C54A7F0030AAB5 /* distance_matcher.h */,
+				BAB6450720C54A7F0030AAB5 /* matcher.cpp */,
+				BAB6450820C54A7F0030AAB5 /* matcher.h */,
+				BAB6450920C54A7F0030AAB5 /* vector_matcher.cpp */,
+				BAB6450A20C54A7F0030AAB5 /* vector_matcher.h */,
+			);
+			path = matcher;
+			sourceTree = "<group>";
+		};
+		BAB6450F20C54A7F0030AAB5 /* reducer */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6451020C54A7F0030AAB5 /* distance_reducer.cpp */,
+				BAB6451120C54A7F0030AAB5 /* distance_reducer.h */,
+				BAB6451220C54A7F0030AAB5 /* douglaspeukcer_reducer.cpp */,
+				BAB6451320C54A7F0030AAB5 /* douglaspeukcer_reducer.h */,
+				BAB6451420C54A7F0030AAB5 /* reducer.cpp */,
+				BAB6451520C54A7F0030AAB5 /* reducer.h */,
+				BAB6451620C54A7F0030AAB5 /* vector_reducer.cpp */,
+				BAB6451720C54A7F0030AAB5 /* vector_reducer.h */,
+			);
+			path = reducer;
+			sourceTree = "<group>";
+		};
+		BAB6451820C54A7F0030AAB5 /* rule */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6451920C54A7F0030AAB5 /* gesture_pair_rule.cpp */,
+				BAB6451A20C54A7F0030AAB5 /* gesture_pair_rule.h */,
+				BAB6451B20C54A7F0030AAB5 /* ncnn_pair_rule.cpp */,
+				BAB6451C20C54A7F0030AAB5 /* ncnn_pair_rule.h */,
+				BAB6451D20C54A7F0030AAB5 /* pair_rule.cpp */,
+				BAB6451E20C54A7F0030AAB5 /* pair_rule.h */,
+			);
+			path = rule;
+			sourceTree = "<group>";
+		};
+		BAB6451F20C54A7F0030AAB5 /* template */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6452020C54A7F0030AAB5 /* parser */,
+				BAB6452520C54A7F0030AAB5 /* template_manager.cpp */,
+				BAB6452620C54A7F0030AAB5 /* template_manager.h */,
+			);
+			path = template;
+			sourceTree = "<group>";
+		};
+		BAB6452020C54A7F0030AAB5 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6452120C54A7F0030AAB5 /* template_parser.cpp */,
+				BAB6452220C54A7F0030AAB5 /* template_parser.h */,
+				BAB6452320C54A7F0030AAB5 /* template_parser_json.cpp */,
+				BAB6452420C54A7F0030AAB5 /* template_parser_json.h */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		BAB6452920C54A7F0030AAB5 /* bitmap */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6452A20C54A7F0030AAB5 /* bitmap_image.hpp */,
+			);
+			path = bitmap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BA1ACA7F20C55C23004BF21E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1ACA8020C55C32004BF21E /* bitmap_image.hpp in Headers */,
+				BA1ACA8120C55C32004BF21E /* autolink.h in Headers */,
+				BA1ACA8220C55C32004BF21E /* config.h in Headers */,
+				BA1ACA8320C55C32004BF21E /* features.h in Headers */,
+				BA1ACA8420C55C32004BF21E /* forwards.h in Headers */,
+				BA1ACA8520C55C32004BF21E /* json.h in Headers */,
+				BA1ACA8620C55C32004BF21E /* json_batchallocator.h in Headers */,
+				BA1ACA8720C55C32004BF21E /* reader.h in Headers */,
+				BA1ACA8820C55C32004BF21E /* value.h in Headers */,
+				BA1ACA8920C55C32004BF21E /* writer.h in Headers */,
+				BA1ACA8A20C55C32004BF21E /* lenet.mem.h in Headers */,
+				BA1ACA8B20C55C32004BF21E /* classification.h in Headers */,
+				BA1ACA8C20C55C32004BF21E /* gesture_classification.h in Headers */,
+				BA1ACA8D20C55C32004BF21E /* ncnn_classification.h in Headers */,
+				BA1ACA8E20C55C32004BF21E /* common_type.h in Headers */,
+				BA1ACA8F20C55C32004BF21E /* gesture.h in Headers */,
+				BA1ACA9020C55C32004BF21E /* gesture_utils.h in Headers */,
+				BA1ACA9120C55C32004BF21E /* lenet.id.h in Headers */,
+				BA1ACA9220C55C32004BF21E /* distance_matcher.h in Headers */,
+				BA1ACA9320C55C32004BF21E /* matcher.h in Headers */,
+				BA1ACA9420C55C32004BF21E /* vector_matcher.h in Headers */,
+				BA1ACA9520C55C32004BF21E /* polyline.h in Headers */,
+				BA1ACA9620C55C32004BF21E /* recognizer.h in Headers */,
+				BA1ACA9720C55C32004BF21E /* distance_reducer.h in Headers */,
+				BA1ACA9820C55C32004BF21E /* douglaspeukcer_reducer.h in Headers */,
+				BA1ACA9920C55C32004BF21E /* reducer.h in Headers */,
+				BA1ACA9A20C55C32004BF21E /* vector_reducer.h in Headers */,
+				BA1ACA9B20C55C32004BF21E /* gesture_pair_rule.h in Headers */,
+				BA1ACA9C20C55C32004BF21E /* ncnn_pair_rule.h in Headers */,
+				BA1ACA9D20C55C32004BF21E /* pair_rule.h in Headers */,
+				BA1ACA9E20C55C32004BF21E /* template_parser.h in Headers */,
+				BA1ACA9F20C55C32004BF21E /* template_parser_json.h in Headers */,
+				BA1ACAA020C55C32004BF21E /* template_manager.h in Headers */,
+				BA1ACAA120C55C32004BF21E /* utils.h in Headers */,
+				BA1ACAA220C55C32004BF21E /* ncnn_recognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BA1ACA1320C55ABB004BF21E /* ncnn-recognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA1ACA1A20C55ABB004BF21E /* Build configuration list for PBXNativeTarget "ncnn-recognizer" */;
+			buildPhases = (
+				BA1ACA1020C55ABB004BF21E /* Sources */,
+				BA1ACA1120C55ABB004BF21E /* Frameworks */,
+				BA1ACA1220C55ABB004BF21E /* CopyFiles */,
+				BA1ACA7F20C55C23004BF21E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ncnn-recognizer";
+			productName = "ncnn-recognizer";
+			productReference = BA1ACA1420C55ABB004BF21E /* libncnn-recognizer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BAB644D420C54A0C0030AAB5 /* GestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB644DC20C54A0C0030AAB5 /* Build configuration list for PBXNativeTarget "GestureRecognizer" */;
+			buildPhases = (
+				BAB644D120C54A0C0030AAB5 /* Sources */,
+				BAB644D220C54A0C0030AAB5 /* Frameworks */,
+				BAB644D320C54A0C0030AAB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GestureRecognizer;
+			productName = GestureRecognizer;
+			productReference = BAB644D520C54A0C0030AAB5 /* GestureRecognizer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAB644CD20C54A0C0030AAB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yangzc;
+				TargetAttributes = {
+					BA1ACA1320C55ABB004BF21E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BAB644D420C54A0C0030AAB5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BAB644D020C54A0C0030AAB5 /* Build configuration list for PBXProject "GestureRecognizer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BAB644CC20C54A0C0030AAB5;
+			productRefGroup = BAB644D620C54A0C0030AAB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAB644D420C54A0C0030AAB5 /* GestureRecognizer */,
+				BA1ACA1320C55ABB004BF21E /* ncnn-recognizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA1ACA1020C55ABB004BF21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1ACA6220C55B1D004BF21E /* json_reader.cpp in Sources */,
+				BA1ACA6320C55B1D004BF21E /* json_value.cpp in Sources */,
+				BA1ACA6420C55B1D004BF21E /* json_writer.cpp in Sources */,
+				BA1ACA6520C55B1D004BF21E /* classification.cpp in Sources */,
+				BA1ACA6620C55B1D004BF21E /* gesture_classification.cpp in Sources */,
+				BA1ACA6720C55B1D004BF21E /* ncnn_classification.cpp in Sources */,
+				BA1ACA6820C55B1D004BF21E /* common_type.cpp in Sources */,
+				BA1ACA6920C55B1D004BF21E /* gesture.cpp in Sources */,
+				BA1ACA6A20C55B1D004BF21E /* gesture_utils.cpp in Sources */,
+				BA1ACA6B20C55B1D004BF21E /* distance_matcher.cpp in Sources */,
+				BA1ACA6C20C55B1D004BF21E /* matcher.cpp in Sources */,
+				BA1ACA6D20C55B1D004BF21E /* vector_matcher.cpp in Sources */,
+				BA1ACA6E20C55B1D004BF21E /* polyline.cpp in Sources */,
+				BA1ACA6F20C55B1D004BF21E /* recognizer.cpp in Sources */,
+				BA1ACA7020C55B1D004BF21E /* distance_reducer.cpp in Sources */,
+				BA1ACA7120C55B1D004BF21E /* douglaspeukcer_reducer.cpp in Sources */,
+				BA1ACA7220C55B1D004BF21E /* reducer.cpp in Sources */,
+				BA1ACA7320C55B1D004BF21E /* vector_reducer.cpp in Sources */,
+				BA1ACA7420C55B1D004BF21E /* gesture_pair_rule.cpp in Sources */,
+				BA1ACA7520C55B1D004BF21E /* ncnn_pair_rule.cpp in Sources */,
+				BA1ACA7620C55B1D004BF21E /* pair_rule.cpp in Sources */,
+				BA1ACA7720C55B1D004BF21E /* template_parser.cpp in Sources */,
+				BA1ACA7820C55B1D004BF21E /* template_parser_json.cpp in Sources */,
+				BA1ACA7920C55B1D004BF21E /* template_manager.cpp in Sources */,
+				BA1ACA7A20C55B1D004BF21E /* utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB644D120C54A0C0030AAB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB6453B20C54A800030AAB5 /* reducer.cpp in Sources */,
+				BAB6453F20C54A800030AAB5 /* pair_rule.cpp in Sources */,
+				BAB6454120C54A800030AAB5 /* template_parser_json.cpp in Sources */,
+				BAB6453620C54A800030AAB5 /* vector_matcher.cpp in Sources */,
+				BAB6453520C54A800030AAB5 /* matcher.cpp in Sources */,
+				BAB6454320C54A800030AAB5 /* utils.cpp in Sources */,
+				BAB6454020C54A800030AAB5 /* template_parser.cpp in Sources */,
+				BAB6453C20C54A800030AAB5 /* vector_reducer.cpp in Sources */,
+				BAB6453020C54A800030AAB5 /* ncnn_classification.cpp in Sources */,
+				BAB6453E20C54A800030AAB5 /* ncnn_pair_rule.cpp in Sources */,
+				BAB6452B20C54A800030AAB5 /* json_reader.cpp in Sources */,
+				BAB6453120C54A800030AAB5 /* common_type.cpp in Sources */,
+				BAB6453D20C54A800030AAB5 /* gesture_pair_rule.cpp in Sources */,
+				BAB6453820C54A800030AAB5 /* recognizer.cpp in Sources */,
+				BAB6453A20C54A800030AAB5 /* douglaspeukcer_reducer.cpp in Sources */,
+				BAB6453320C54A800030AAB5 /* gesture_utils.cpp in Sources */,
+				BAB6454220C54A800030AAB5 /* template_manager.cpp in Sources */,
+				BAB6452C20C54A800030AAB5 /* json_value.cpp in Sources */,
+				BAB6452D20C54A800030AAB5 /* json_writer.cpp in Sources */,
+				BAB6453920C54A800030AAB5 /* distance_reducer.cpp in Sources */,
+				BAB6452E20C54A800030AAB5 /* classification.cpp in Sources */,
+				BAB644D920C54A0C0030AAB5 /* main.cpp in Sources */,
+				BAB6453220C54A800030AAB5 /* gesture.cpp in Sources */,
+				BAB6453720C54A800030AAB5 /* polyline.cpp in Sources */,
+				BAB6453420C54A800030AAB5 /* distance_matcher.cpp in Sources */,
+				BAB6452F20C54A800030AAB5 /* gesture_classification.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA1ACA1B20C55ABB004BF21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestureRecognizer/frameworks",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 x86_64 armv7";
+			};
+			name = Debug;
+		};
+		BA1ACA1C20C55ABB004BF21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestureRecognizer/frameworks",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 x86_64 armv7";
+			};
+			name = Release;
+		};
+		BAB644DA20C54A0C0030AAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BAB644DB20C54A0C0030AAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BAB644DD20C54A0C0030AAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestureRecognizer/frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAB644DE20C54A0C0030AAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestureRecognizer/frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA1ACA1A20C55ABB004BF21E /* Build configuration list for PBXNativeTarget "ncnn-recognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA1ACA1B20C55ABB004BF21E /* Debug */,
+				BA1ACA1C20C55ABB004BF21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB644D020C54A0C0030AAB5 /* Build configuration list for PBXProject "GestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB644DA20C54A0C0030AAB5 /* Debug */,
+				BAB644DB20C54A0C0030AAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB644DC20C54A0C0030AAB5 /* Build configuration list for PBXNativeTarget "GestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB644DD20C54A0C0030AAB5 /* Debug */,
+				BAB644DE20C54A0C0030AAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAB644CD20C54A0C0030AAB5 /* Project object */;
+}
